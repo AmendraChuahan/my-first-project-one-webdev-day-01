@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UtF-8">
+        /* word lo increpte karne me*/
+        <mata name ="viewport" content =" width= device-width,intial-scale=1.0">
+<title>
+    colar scheme Switcher
+</title>
+<style>
+    body{
+        transition: background-color 0.10s ease;
+        background-color: black;
+        color: white;
+    }
+    .canvas{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .button{
+        display: inline-block;
+        width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #grey{
+        background-color: grey;
+        
+    }
+    #white{
+        background-color: white;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+
+</style>
+
+</head>
+<body>
+<div class ="camvas">
+    <h1> color scheme switcher</h1>
+  <span  class = "button" id="grey"></span> 
+  <span  class = "button" id="white"></span> 
+  <span  class = "button" id="blue"></span> 
+  <span  class = "button" id="yellow"></span>
+  <h2> try clicking on one of the colors </h2> 
+
+</div>
+<script>
+    const greyButton= document.getElementById('grey');
+    const whiteButton= document.getElementById('white');
+    const blueButton= document.getElementById('blue');
+    const blackButton = document.getElementById('yellow');
+    greyButton.addEventListener('click', function(){
+        document.body.style.backgroundColor='grey';
+    });
+
+    whiteButton.addEventListener('click', function(){
+        document.body.style.backgroundColor='white';
+    });
+    blueButton.addEventListener('click', function(){
+        document.body.style.backgroundColor= 'blue';
+    });
+    blackButton.addEventListener('click', function(){
+        document.body.style.backgroundColor='yellow';
+    }); 
+</script>
+</body>
+</html>
